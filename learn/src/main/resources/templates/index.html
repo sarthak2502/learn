@@ -1,0 +1,46 @@
+<!-- src/main/resources/templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quant Code Factory</title>
+</head>
+<body>
+    <h1>Hello, There!</h1>
+    <h2>Welcome to The Quant Code Factory!</h2>
+    <h3>At QCF, you can learn various technologies not through only zoom calls or videos, but by building real time applications on daily basis.</h3>
+    <p>
+        This page is reachable by the URL - 'http://ec2-3-109-213-162.ap-south-1.compute.amazonaws.com/', which is not a very real website name because it was created for demonstration purpose only.
+        This URL is just a Public IPv4 domain of an AWS EC2 instance. This text you are reading is being served by a Java based Sprint Boot application, which is deployed inside an AWS EC2 instance.
+        Inside this Ec2, the spring boot application runs on a docker engine. The spring application exposes an endpoint which is exposed on port 8080 through an embeded tomcat server. 
+        Further docker maps the 8080 application port to port 80 of the EC2 instance. The security groups of EC2 are further configured to expose the response of endpoint to the internet.
+        
+        The whole (1 hour) exercise aims to enable a developer to learn and do following:
+        <ul>
+          <li> Develop a simple Java Spring Boot Application (10 mins)</li>
+          <li> Setup a GIT repo, clone it in IDE and add code. (5 mins)</li>
+          <li> Setup Maven (to build Java app) (5 mins)</li>
+          <li> Setup Docker (to run Java app)(5 mins) </li>
+          <li> Register/Setup a new AWS Account and familiarize with EC2 service (5 mins)</li>
+          <li> Create a new EC2 instance and connect to it using ssh from local system (15 mins)</li>
+          <li> Setup docker on EC2 instance (5 mins)</li>
+          <li> Build a docker image on local, push it to registry, pull inside EC2 and run the application (10 mins)</li>
+          <li> Expose spring application's rest endpoint, deployed on EC2, to internet using a public domain.</li>
+				</ul>
+				
+				<h4><a href="#">Click here</a> to register for a live session.</h4>
+				
+        The next exercise will target:
+        <ul>
+          <li> Enable above registration link.</li>
+          <li> Enhance the Java app to add more endpoints</li>
+          <li> Automate the build process (CI) using Git Actions workflow</li>
+          <li> Automate the deploy process (CD) using Git Actions workflow</li>
+          <li> Learn and setup RDS service. Connect RDS from local system. Create DB and tables.</li>
+          <li> Connect to RDS from Java Application deployed on EC2</li>
+          <li> IAM Roles</li>
+        </ul>
+        
+        <h4>Stay Tuned. Visit this page again to stay updated..</h4>
+    </p>
+</body>
+</html>
